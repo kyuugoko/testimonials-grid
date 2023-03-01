@@ -1,0 +1,11 @@
+.jonathan {
+    background: $very-dark-grayish-blue;
+
+    .testimonial-verified {
+        @extend %verified-white;
+    }
+
+    @media screen and (min-width: 990px) {
+        grid-area: jonathan;
+    }
+}

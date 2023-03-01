@@ -1,0 +1,34 @@
+.testimonial-card {
+    border-radius: 0.5rem;
+    padding: 1.8rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    @extend %gap;
+    box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.3);
+
+    figcaption {
+        display: flex;
+        align-items: center;
+        @extend %gap;
+        
+        img{
+            @extend %img-circle;
+        }
+
+        .testimonial-verified {
+            font-size: 11px;
+        }
+    }
+
+    .testimonial-title {
+        margin-bottom: 1.5rem;
+        font-size: 20px;
+    }
+
+    .testimonial-quote{
+        color: $white-50;
+        line-height: 1.4;
+    }
+
+}

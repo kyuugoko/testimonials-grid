@@ -1,0 +1,14 @@
+.testimonial-container {
+    display: grid;
+    padding: 1.3rem;
+    @extend %gap;
+
+    @media screen and (min-width: 990px) {
+        max-width: 1400px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+    }
+}
